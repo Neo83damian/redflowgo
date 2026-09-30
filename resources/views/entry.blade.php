@@ -10,13 +10,13 @@
          up when this link is shared on Messenger, Facebook, etc. --}}
     <meta property="og:title" content="REDFLOW - Blood Types Digital Masterlist">
     <meta property="og:description" content="A community blood donation digital masterlist for Irosin Rural Health Unit.">
-    <meta property="og:image" content="{{ asset('images/redflow-social-preview.png') }}">
+    <meta property="og:image" content="{{ asset('images/redflow-social-preview.jpg') }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="REDFLOW - Blood Types Digital Masterlist">
-    <meta name="twitter:image" content="{{ asset('images/redflow-social-preview.png') }}">
-    <link rel="icon" type="image/png" href="{{ asset('images/redflow-social-preview.png') }}">
+    <meta name="twitter:image" content="{{ asset('images/redflow-social-preview.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/redflow-social-preview.jpg') }}">
 
     <!-- FontAwesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
