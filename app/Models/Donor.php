@@ -53,6 +53,17 @@ class Donor extends Model
             'id' => $this->id,
             'name' => $this->name,
             'bloodType' => $this->blood_type,
+            // Was never returned here before, even though it's saved to
+            // the DB fine. The frontend always expects this donor field as
+            // "sex" (not "gender") — see the SEX dropdown in
+            // openDonorProfile(). Without it, that dropdown always fell
+            // back to "N/A", which is what caused BOTH of Drax's reports:
+            // the Account Information view always showing N/A, and every
+            // plain "Update" click falsely logging a "Sex/Gender: N/A ->
+            // N/A" Audit Log entry (the edit-diff check compares this
+            // field's old value, which was always blank, against the
+            // dropdown's current value).
+            'sex' => $this->gender,
             'brgy' => $this->brgy,
             'contact' => $this->contact,
             'avatar' => $this->avatar_path ?: 'picture.jpg',
